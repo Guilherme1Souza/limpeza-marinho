@@ -1,0 +1,1 @@
+//Layout que ficará em volta das páginas como estrutura fixa, envolvendo o header e o footer
