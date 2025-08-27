@@ -3,8 +3,16 @@ import { Navbar } from "@/components/Sidenav";
 import React from "react";
 import Image from "next/image";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+
 import womenHeader from "@/images/header-men.png";
 import productLimpeza from "@/images/produto-limpeza.png";
+import pisosVinilico from "@/images/pisos-vinilico.png";
+import pisosArdocia from "@/images/pisos-ardocia.png";
+import revestimentoPedra from "@/images/revestimento-pedra.png";
+import pisosEpoxi from "@/images/pisos-epoxi.jpeg";
+import pisosGranilite from "@/images/pisos-granilite.png";
 
 export default function SobrePage() {
   const valores = [
@@ -22,6 +30,39 @@ export default function SobrePage() {
       titulo: "Valorização do Ambiente",
       texto:
         "Somos uma empresa formada por profissionais com mais de 15 anos de experiência em Limpeza de Pisos e Pedras. Oferecemos serviços de qualidade, com produtos e equipamentos de especializados. Obtemos ótimos resultados na limpeza e tratamento de pisos e revestimentos de pedras.",
+    },
+  ];
+
+  const cards = [
+    {
+      titulo: "Pisos Vinílicos",
+      texto:
+        "Utilizamos produtos e equipamentos apropriados para remoção da sujeira, riscos, fungos e bactérias da superfície do piso.",
+      img: pisosVinilico,
+    },
+    {
+      titulo: "Pisos Ardocia",
+      texto:
+        "Utilizamos produtos e equipamentos apropriados para remoção da sujeira, riscos, fungos e bactérias da superfície do piso.",
+      img: pisosArdocia,
+    },
+    {
+      titulo: "Revestimento em Pedra",
+      texto:
+        "Utilizamos produtos e equipamentos apropriados para remoção da sujeira, riscos, fungos e bactérias da superfície do piso.",
+      img: revestimentoPedra,
+    },
+    {
+      titulo: "Pisos Epóxi",
+      texto:
+        "Utilizamos produtos e equipamentos apropriados para remoção da sujeira, riscos, fungos e bactérias da superfície do piso.",
+      img: pisosEpoxi,
+    },
+    {
+      titulo: "Pisos Granilite",
+      texto:
+        "Utilizamos produtos e equipamentos apropriados para remoção da sujeira, riscos, fungos e bactérias da superfície do piso.",
+      img: pisosGranilite,
     },
   ];
 
@@ -128,6 +169,52 @@ export default function SobrePage() {
           </div>
         </div>
       </section>
+      <section id="servicos" className="bg-gray-100">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-blue-600">
+            Nossos Serviços
+          </h2>
+          <div className="mt-10">
+            <Swiper
+              modules={[Navigation, Pagination]}
+              spaceBetween={20}
+              slidesPerView={1}
+              autoplay={true}
+              pagination={{ clickable: true }}
+              grabCursor={true}
+              breakpoints={{
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+                1280: { slidesPerView: 3 },
+              }}
+              className="!pb-10"
+            >
+              {cards.map((card, i) => (
+                <SwiperSlide key={i}>
+                  <div className="rounded-2xl overflow-hidden bg-white border shadow-sm">
+                    <div className="aspect-[4/3] bg-gray-200">
+                      <Image
+                        src={card.img}
+                        alt={card.titulo}
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h3 className="font-semibold text-neutral-900">
+                        {card.titulo}
+                      </h3>
+                      <p className="mt-2 text-sm text-neutral-700">
+                        {card.texto}
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </main>
   );
