@@ -7,6 +7,24 @@ import womenHeader from "@/images/header-men.png";
 import productLimpeza from "@/images/produto-limpeza.png";
 
 export default function SobrePage() {
+  const valores = [
+    {
+      titulo: "Excelência",
+      texto:
+        "Somos uma empresa formada por profissionais com mais de 15 anos de experiência em Limpeza de Pisos e Pedras. Oferecemos serviços de qualidade, com produtos e equipamentos de especializados. Obtemos ótimos resultados na limpeza e tratamento de pisos e revestimentos de pedras.",
+    },
+    {
+      titulo: "Qualidade e Segurança",
+      texto:
+        "Somos uma empresa formada por profissionais com mais de 15 anos de experiência em Limpeza de Pisos e Pedras. Oferecemos serviços de qualidade, com produtos e equipamentos de especializados. Obtemos ótimos resultados na limpeza e tratamento de pisos e revestimentos de pedras.",
+    },
+    {
+      titulo: "Valorização do Ambiente",
+      texto:
+        "Somos uma empresa formada por profissionais com mais de 15 anos de experiência em Limpeza de Pisos e Pedras. Oferecemos serviços de qualidade, com produtos e equipamentos de especializados. Obtemos ótimos resultados na limpeza e tratamento de pisos e revestimentos de pedras.",
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-white text-neutral-800">
       <Navbar />
@@ -14,7 +32,7 @@ export default function SobrePage() {
         id="home"
         className="flex flex-col h-full relative overflow-hidden bg-blue-600 text-white"
       >
-        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8  grid lg:grid-cols-2 gap-10">
+        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 pt-14 px-8 grid lg:grid-cols-2 gap-10">
           <div className="flex flex-col justify-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
               Confie em quem entende de limpeza profissional, confie na mania de
@@ -87,6 +105,26 @@ export default function SobrePage() {
               src={productLimpeza}
               alt="Produto de Limpeza"
             />
+          </div>
+        </div>
+      </section>
+      <section id="valores" className="bg-blue-600">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+          <h2 className="mb-6 text-3xl sm:text-4xl font-semibold tracking-tight text-white">
+            Nossos Valores
+          </h2>
+          <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {valores.map((valor, i) => (
+              <div
+                key={i}
+                className=" flex flex-col rounded-3xl border border-blue-300 bg-white p-6 shadow-sm text-blue-600"
+              >
+                <h3 className="text-xl font-semibold">{valor.titulo}</h3>
+                <p className="flex flex-col justify-center items-center leading-relaxed text-base mt-2 text-neutral-700">
+                  {valor.texto}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
