@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 
 import womenHeader from "@/images/header-men.png";
+import productLimpeza from "@/images/produto-limpeza.png";
 
 export default function SobrePage() {
   return (
@@ -44,7 +45,51 @@ export default function SobrePage() {
           </div>
         </div>
       </section>
-
+      <section id="sobre" className="relative bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-10">
+          <div>
+            <h2 className="mb-6 text-3xl sm:text-4xl font-semibold tracking-tight text-blue-600 max-w-md">
+              Somos uma empresa de limpeza de pisos
+            </h2>
+            <div className="flex flex-col">
+              <p className="mt-4 text-gray-500 leading-relaxed font-light text-base">
+                Somos uma empresa especializada em limpeza e conservação de
+                pisos, oferecendo soluções profissionais para manter ambientes
+                sempre limpos, seguros e com aparência impecável. Movidos pelo
+                compromisso com a excelência, unimos experiência técnica e
+                produtos de alta qualidade para proporcionar resultados
+                duradouros, valorizando cada espaço e garantindo conforto e
+                bem-estar.
+              </p>
+              <p className="mt-4 text-gray-500 leading-relaxed text-base font-light">
+                Nossa missão é ser referência em limpeza de pisos, oferecendo
+                serviços inovadores e personalizados que atendam às necessidades
+                de residências, empresas e ambientes comerciais. Acreditamos que
+                um piso bem cuidado é fundamental para transmitir organização,
+                higiene e credibilidade, além de contribuir para a durabilidade
+                do revestimento. Por isso, investimos constantemente em
+                tecnologia, capacitação de equipe e processos eficientes, sempre
+                com foco na satisfação de nossos clientes e no cuidado com cada
+                detalhe.
+              </p>
+            </div>
+          </div>
+          <div className="hidden lg:block absolute top-0 right-0 h-full w-1/2">
+            <Image
+              className="w-full h-full object-cover"
+              src={productLimpeza}
+              alt="Produto de Limpeza"
+            />
+          </div>
+          <div className="lg:hidden mt-8">
+            <Image
+              className="w-full h-64 object-cover rounded-xl"
+              src={productLimpeza}
+              alt="Produto de Limpeza"
+            />
+          </div>
+        </div>
+      </section>
       <Footer />
     </main>
   );
