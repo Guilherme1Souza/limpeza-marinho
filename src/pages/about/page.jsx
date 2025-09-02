@@ -3,6 +3,8 @@ import { Navbar } from "@/components/Sidenav";
 import React from "react";
 import Image from "next/image";
 
+import IconLogo from "@/images/logo.svg";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
@@ -166,6 +168,39 @@ export default function SobrePage() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+      <section className="max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div className="bg-gray-200 rounded-3xl shadow-lg p-8 flex flex-col items-center text-center relative">
+          <div className="absolute -top-12 w-24 h-24 rounded-full bg-gray-400 shadow-inner flex items-center justify-center border-4 border-white">
+            <Image src={IconLogo} alt="Logo" className="h-20 w-20" />
+          </div>
+
+          <div className="mt-16 space-y-4">
+            <div>
+              <p className="text-lg font-semibold text-gray-800">
+                Emerson Marinho
+              </p>
+              <p className="text-sm text-gray-500">CEO e Fundador</p>
+              <p className="mt-2 text-sm font-medium">Marinho Limpeza</p>
+            </div>
+            <p className="text-gray-700 leading-relaxed">
+              Somos uma empresa formada por profissionais com mais de 15 anos de
+              experiência em limpeza, tratamento e conservação de pisos e
+              pedras. Oferecemos serviços de alta qualidade, utilizando produtos
+              e equipamentos especializados que garantem resultados superiores,
+              valorizando e preservando a estética dos ambientes. Com expertise
+              em diferentes tipos de revestimentos, realizamos desde a limpeza
+              pesada até o tratamento e impermeabilização, sempre com foco na
+              durabilidade e na beleza das superfícies. Nosso compromisso é
+              oferecer um atendimento personalizado, entendendo as necessidades
+              de cada cliente e entregando soluções eficientes e seguras.
+              Atendemos a Região Metropolitana de São Paulo, Capital, Interior e
+              Litoral, oferecendo serviços para residências, condomínios,
+              empresas e indústrias. Com a Marinho Limpeza Profissional, seu
+              ambiente ganha um novo padrão de cuidado, limpeza e valorização.
+            </p>
           </div>
         </div>
       </section>
