@@ -1,11 +1,11 @@
 import { Home, Store, Building2, School, Hotel, Church } from "lucide-react";
 
-import { Footer } from "@/components/Footer";
-import { Navbar } from "@/components/Sidenav";
+import { Footer } from "../components/Footer";
+import { Navbar } from "../components/Sidenav";
 import React from "react";
 import Image from "next/image";
 
-import womenHeader from "@/images/header-men.png";
+import womenHeader from "../images/header-men.png";
 
 export default function HomePage() {
   const diferenciais = [

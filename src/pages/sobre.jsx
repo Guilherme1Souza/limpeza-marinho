@@ -1,20 +1,20 @@
-import { Footer } from "@/components/Footer";
-import { Navbar } from "@/components/Sidenav";
+import { Footer } from "../components/Footer";
+import { Navbar } from "../components/Sidenav";
 import React from "react";
 import Image from "next/image";
 
-import IconLogo from "@/images/logo.svg";
+import IconLogo from "../images/logo.svg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
-import womenHeader from "@/images/header-men.png";
-import productLimpeza from "@/images/produto-limpeza.png";
-import pisosVinilico from "@/images/pisos-vinilico.png";
-import pisosArdocia from "@/images/pisos-ardocia.png";
-import revestimentoPedra from "@/images/revestimento-pedra.png";
-import pisosEpoxi from "@/images/pisos-epoxi.jpeg";
-import pisosGranilite from "@/images/pisos-granilite.png";
+import womenHeader from "../images/header-men.png";
+import productLimpeza from "../images/produto-limpeza.png";
+import pisosVinilico from "../images/pisos-vinilico.png";
+import pisosArdocia from "../images/pisos-ardocia.png";
+import revestimentoPedra from "../images/revestimento-pedra.png";
+import pisosEpoxi from "../images/pisos-epoxi.jpeg";
+import pisosGranilite from "../images/pisos-granilite.png";
 
 export default function SobrePage() {
   const valores = [

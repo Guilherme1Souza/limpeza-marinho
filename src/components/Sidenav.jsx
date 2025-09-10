@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-import IconLogo from "@/images/logo.svg";
+import IconLogo from "../images/logo.svg";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,25 +17,25 @@ export const Navbar = () => {
           <Image src={IconLogo} alt="Logo" className="h-12 w-12" />
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-white">
-          <a href="" className="hover:underline">
+          <Link href="/" className="hover:underline">
             Home
-          </a>
-          <a href="" className="hover:underline">
+          </Link>
+          <Link href="/sobre" className="hover:underline">
             Quem Somos
-          </a>
-          <a href="" className="hover:underline">
+          </Link>
+          <Link href="/servicos" className="hover:underline">
             Nossos Serviços
-          </a>
-          <a href="" className="hover:underline">
+          </Link>
+          <Link href="/contato" className="hover:underline">
             Contato
-          </a>
+          </Link>
         </nav>
-        <a
-          href=""
+        <Link
+          href="/quote"
           className="hidden rounded-tr-2xl rounded-bl-2xl md:inline-flex items-center bg-white px-4 py-2 text-blue-600 text-sm font-medium hover:bg-gray-100 transition"
         >
           Solicite um orçamento
-        </a>
+        </Link>
 
         {/* Botão Mobile */}
         <button
