@@ -71,10 +71,7 @@ export default function SobrePage() {
   return (
     <main className="min-h-screen bg-white text-neutral-800">
       <Navbar />
-      <section
-        id="home"
-        className="flex flex-col h-full relative overflow-hidden bg-blue-600 text-white"
-      >
+      <section className="flex flex-col h-full relative overflow-hidden bg-blue-600 text-white">
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 pt-14 px-8 grid lg:grid-cols-2 gap-10">
           <div className="flex flex-col justify-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
