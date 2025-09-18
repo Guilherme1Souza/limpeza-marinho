@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="flex items-center gap-3">
           <span className="inline-block h-8 w-8 rounded-xl bg-white" />
           <span className="text-sm">
-            Marinho Limpeza Profissional • Todos os direitos reservados
+            Mania de Limpeza Profissional • Todos os direitos reservados
           </span>
         </div>
         <div className="text-sm">São Paulo • SP • Brasil</div>

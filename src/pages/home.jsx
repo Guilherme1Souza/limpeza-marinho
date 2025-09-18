@@ -43,7 +43,7 @@ export default function HomePage() {
       nome: "Mariana Alves",
       cargo: "Arquiteta",
       texto:
-        "A equipe da Marinho Limpeza trouxe vida nova ao meu projeto. Dedicação e capricho em cada detalhe!",
+        "A equipe da Mania de Limpeza trouxe vida nova ao meu projeto. Dedicação e capricho em cada detalhe!",
     },
   ];
 
@@ -88,7 +88,7 @@ export default function HomePage() {
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-blue-600 text-center">
-            Por que escolher a Marinho Limpeza?
+            Por que escolher a Mania de Limpeza?
           </h2>
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {diferenciais.map((item, i) => (

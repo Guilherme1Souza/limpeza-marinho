@@ -180,7 +180,7 @@ export default function SobrePage() {
                 Emerson Marinho
               </p>
               <p className="text-sm text-gray-500">CEO e Fundador</p>
-              <p className="mt-2 text-sm font-medium">Marinho Limpeza</p>
+              <p className="mt-2 text-sm font-medium">Mania de Limpeza</p>
             </div>
             <p className="text-gray-700 leading-relaxed">
               Somos uma empresa formada por profissionais com mais de 15 anos de
@@ -195,7 +195,7 @@ export default function SobrePage() {
               de cada cliente e entregando soluções eficientes e seguras.
               Atendemos a Região Metropolitana de São Paulo, Capital, Interior e
               Litoral, oferecendo serviços para residências, condomínios,
-              empresas e indústrias. Com a Marinho Limpeza Profissional, seu
+              empresas e indústrias. Com a Mania de Limpeza Profissional, seu
               ambiente ganha um novo padrão de cuidado, limpeza e valorização.
             </p>
           </div>
