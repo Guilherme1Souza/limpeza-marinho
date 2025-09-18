@@ -154,7 +154,7 @@ export default function Contato() {
               className="mt-1"
             />
             Confirmo a exatidão das informações pessoais, ciente de seu envio à
-            Taxcel e da minha responsabilidade sobre elas.
+            Mania de Limpeza e da minha responsabilidade sobre elas.
           </label>
 
           <button
