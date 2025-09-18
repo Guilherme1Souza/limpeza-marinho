@@ -185,28 +185,33 @@ export default function Contato() {
           )}
         </form>
 
-        <aside className="w-full md:w-1/3 bg-white shadow-md rounded-2xl p-6 space-y-6">
-          <h4 className="text-lg font-semibold text-gray-800">
+        <aside className="w-full md:w-1/3 bg-white shadow-lg rounded-2xl p-6">
+          <h4 className="text-xl font-semibold text-gray-800 border-b pb-3 mb-6">
             Canais de atendimento
           </h4>
 
-          <div className="flex items-start gap-4">
-            <span className="text-blue-700">📧</span>
-            <div>
-              <strong className="block">E-mail</strong>
-              <p className="text-gray-600 text-sm">
-                Envie um e-mail e fale diretamente com nossa equipe.
-              </p>
+          <div className="space-y-6">
+            <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-700 text-xl">
+                📧
+              </div>
+              <div>
+                <strong className="block text-gray-800">E-mail</strong>
+                <p className="text-gray-600 text-sm">
+                  Envie um e-mail e fale diretamente com nossa equipe.
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div className="flex items-start gap-4">
-            <span className="text-blue-700">📱</span>
-            <div>
-              <strong className="block">WhatsApp</strong>
-              <p className="text-gray-600 text-sm">
-                Fale direto no seu WhatsApp com nossos atendentes.
-              </p>
+            <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-green-100 text-green-700 text-xl">
+                📱
+              </div>
+              <div>
+                <strong className="block text-gray-800">WhatsApp</strong>
+                <p className="text-gray-600 text-sm">
+                  Fale direto no seu WhatsApp com nossos atendentes.
+                </p>
+              </div>
             </div>
           </div>
         </aside>
