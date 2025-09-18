@@ -17,7 +17,7 @@ export default function Contato() {
   });
   const [checked, setChecked] = useState(false);
   const [submitting, setSubmitting] = useState(false);
-  const [modalAberta, setModalAberta] = useState(true);
+  const [modalAberta, setModalAberta] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
