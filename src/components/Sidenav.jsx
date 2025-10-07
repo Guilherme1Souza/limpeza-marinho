@@ -23,7 +23,7 @@ export const Navbar = () => {
           <Link href="/sobre" className="hover:underline">
             Quem Somos
           </Link>
-          <Link href="/servicos" className="hover:underline">
+          <Link href="/service" className="hover:underline">
             Nossos Serviços
           </Link>
           <Link href="/contato" className="hover:underline">
