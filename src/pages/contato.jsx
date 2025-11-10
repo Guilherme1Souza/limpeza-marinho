@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { Navbar } from "../components/Sidenav";
 import { Footer } from "../components/Footer";
+import SEO from "../components/SEO";
 
 export default function Contato() {
   const [state, handleSubmit] = useForm("xzzanzej");
@@ -53,8 +54,17 @@ export default function Contato() {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col md:flex-row gap-8 p-6 md:p-12 bg-gray-50">
-        <form
+      <SEO
+        title="Mestre de Pisos - Contato"
+        description="Especialistas em limpeza, polimento e conservação de pisos. Excelência e qualidade para seu ambiente."
+        keywords="contato mestre de pisos, orçamento limpeza de pisos, serviços de polimento"
+        canonical="https://mestrepisos.com.br"
+        siteName="Mestre de Pisos"
+        favicon="/favicon.ico"
+      />
+      <div className="flex flex-col  md:flex-row gap-8 p-6 md:p-12 bg-gray-100 min-h-screen">
+        <div className="bg-white shadow-md rounded-tr-2xl rounded-bl-2xl p-6 md:p-10 w-full">
+          {/* <form
           onSubmit={onSubmitForm}
           className="flex-1 bg-white shadow-md rounded-2xl p-6 md:p-10 space-y-5"
         >
@@ -183,38 +193,93 @@ export default function Contato() {
               </div>
             </div>
           )}
-        </form>
+        </form> */}
 
-        <aside className="w-full md:w-1/3 bg-white shadow-lg rounded-2xl p-6">
-          <h4 className="text-xl font-semibold text-gray-800 border-b pb-3 mb-6">
-            Canais de atendimento
-          </h4>
+          <section className="w-full justify-start flex flex-col md:flex-row">
+            {/* Coluna da esquerda - Endereço */}
+            <div className="flex-1 flex flex-col justify-center p-8">
+              <h3 className="text-2xl font-semibold text-gray-800 border-b-2 pb-3 mb-6">
+                Nosso Endereço
+              </h3>
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                Rua Padre Jacome de Queiroz, 136
+                <br />
+                São Paulo - SP
+                <br />
+                CEP: 01234-567
+              </p>
 
-          <div className="space-y-6">
-            <div className="flex items-center gap-4">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-700 text-xl">
-                📧
-              </div>
-              <div>
-                <strong className="block text-gray-800">E-mail</strong>
-                <p className="text-gray-600 text-sm">
-                  Envie um e-mail e fale diretamente com nossa equipe.
-                </p>
+              <p className="text-gray-600">
+                <strong>Horário de atendimento:</strong> Segunda a sábado, das
+                8h às 18h
+              </p>
+
+              {/* Mapa Google incorporado */}
+              <div className="mt-8 rounded-xl overflow-hidden shadow-md">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9999999999995!2d-46.655!3d-23.564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c1a9c4b1b9%3A0x87a0a78db9990e83!2sRua%20Padre%20Jacome%20de%20Queiroz%2C%20136%20-%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1718403232467!5m2!1spt-BR!2sbr"
+                  width="100%"
+                  height="250"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
-            <div className="flex items-center gap-4">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-green-100 text-green-700 text-xl">
-                📱
+
+            {/* Coluna da direita - Canais de atendimento */}
+            <aside className="flex-1 p-8 flex flex-col mb-16 justify-start">
+              <h2 className="text-2xl font-semibold text-gray-800 border-b-2 pb-3 mb-16 text-start">
+                Canais de atendimento
+              </h2>
+
+              <div className="space-y-8 mt-16">
+                <div className="flex items-center gap-4">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-blue-700 text-2xl">
+                    📧
+                  </div>
+                  <div>
+                    <strong className="block text-gray-800 text-lg">
+                      E-mail
+                    </strong>
+                    <p className="text-gray-600 text-sm">
+                      Envie um e-mail e fale diretamente com nossa equipe.
+                    </p>
+                    <a
+                      href="mailto:emersonmarinho016@gmail.com"
+                      className="text-blue-600 text-sm hover:underline"
+                    >
+                      emersonmarinho016@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-green-100 text-green-700 text-2xl">
+                    📱
+                  </div>
+                  <div>
+                    <strong className="block text-gray-800 text-lg">
+                      WhatsApp
+                    </strong>
+                    <p className="text-gray-600 text-sm">
+                      Fale direto no seu WhatsApp com nossos atendentes.
+                    </p>
+                    <a
+                      href="https://wa.me/5511911430748"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-green-600 text-sm hover:underline"
+                    >
+                      (11) 91143-0748
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div>
-                <strong className="block text-gray-800">WhatsApp</strong>
-                <p className="text-gray-600 text-sm">
-                  Fale direto no seu WhatsApp com nossos atendentes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </aside>
+            </aside>
+          </section>
+        </div>
       </div>
       <Footer />
     </div>

@@ -6,6 +6,8 @@ import { Footer } from "../components/Footer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
+import SEO from "../components/SEO";
+
 // Estilos do Swiper
 import "swiper/css";
 import "swiper/css/navigation";
@@ -30,6 +32,15 @@ export default function ServicePage() {
   return (
     <>
       <Navbar />
+
+      <SEO
+        title="Mestre de Pisos - Serviços"
+        description="Especialistas em limpeza, polimento e conservação de pisos. Excelência e qualidade para seu ambiente."
+        keywords="serviços de limpeza de pisos, polimento de mármore, restauração de granito, impermeabilização de piso, cristalização de piso"
+        canonical="https://mestrepisos.com.br/service"
+        siteName="Mestre de Pisos"
+      />
+
       <main className="min-h-screen bg-gray-100 text-neutral-800">
         {/* Hero */}
         <section className="w-full bg-gray-100 py-20 px-5 text-center">

@@ -2,6 +2,7 @@ import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Sidenav";
 import React from "react";
 import Image from "next/image";
+import SEO from "../components/SEO";
 
 import IconLogo from "../images/logo.svg";
 
@@ -71,6 +72,14 @@ export default function SobrePage() {
   return (
     <main className="min-h-screen bg-white text-neutral-800">
       <Navbar />
+      <SEO
+        title="Mestre de Pisos - Sobre Nós"
+        description="Especialistas em limpeza, polimento e conservação de pisos. Excelência e qualidade para seu ambiente."
+        keywords="sobre mestre de pisos, empresa de limpeza de pisos, profissionais de polimento, especialistas em mármore e granito"
+        canonical="https://mestrepisos.com.br/sobre"
+        siteName="Mestre de Pisos"
+      />
+
       <section className="flex flex-col h-full relative overflow-hidden bg-blue-600 text-white">
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 pt-14 px-8 grid lg:grid-cols-2 gap-10">
           <div className="flex flex-col justify-center">

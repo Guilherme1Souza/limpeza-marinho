@@ -7,6 +7,7 @@ export default function SEO({
   keywords = "palavra1, palavra2, palavra3",
   canonical = "https://meusite.com",
   siteName = "Meu Site",
+  locale = "pt_BR",
 }) {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -27,6 +28,10 @@ export default function SEO({
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+
+      <meta name="author" content="Guilherme Souza" />
+      <meta name="theme-color" content="#ffffff" />
+      <meta name="language" content={locale} />
 
       <script
         type="application/ld+json"

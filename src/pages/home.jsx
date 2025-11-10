@@ -6,6 +6,7 @@ import React from "react";
 import Image from "next/image";
 
 import womenHeader from "../images/header-men.png";
+import SEO from "../components/SEO";
 
 export default function HomePage() {
   const diferenciais = [
@@ -50,7 +51,13 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-white text-neutral-800">
       <Navbar />
-
+      <SEO
+        title="Limpeza de Pisos | Mestre de Pisos"
+        description="Especialistas em limpeza, polimento e conservação de pisos. Excelência e qualidade para seu ambiente."
+        keywords="limpeza de pisos, polimento de pisos, restauração de mármore, impermeabilização de granito, cristalização de piso, limpeza pós-obra"
+        canonical="https://mestrepisos.com.br"
+        siteName="Mestre de Pisos"
+      />
       {/* HERO */}
       <section className="flex flex-col h-full relative overflow-hidden bg-blue-600 text-white">
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 pt-20 px-6 grid lg:grid-cols-2 gap-10">
@@ -83,7 +90,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* DIFERENCIAIS */}
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
@@ -107,7 +113,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* SERVIÇOS */}
       <section id="servicos" className="bg-gray-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
@@ -179,7 +184,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* DEPOIMENTOS */}
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-20 text-center">
@@ -206,7 +210,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* CTA FINAL */}
       <section className="bg-blue-600 text-white py-20 text-center">
         <div className="max-w-2xl mx-auto px-4">
@@ -219,7 +222,7 @@ export default function HomePage() {
           </p>
           <div className="mt-6">
             <a
-              href="#contato"
+              href="/contato"
               className="inline-flex items-center rounded-tr-2xl rounded-bl-2xl bg-white px-6 py-3 text-blue-600 font-medium hover:bg-blue-50 transition text-sm sm:text-base"
             >
               Solicite um orçamento
@@ -227,7 +230,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       <Footer />
     </main>
   );

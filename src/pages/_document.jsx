@@ -8,8 +8,7 @@ export default function Document() {
         <meta name="theme-color" content="#ffffff" />
         <meta name="author" content="Guilherme Souza" />
         <meta name="robots" content="index, follow" />
-        <title>Mestre de Pisos - Limpeza e Conservação de Pisos</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

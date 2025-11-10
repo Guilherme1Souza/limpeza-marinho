@@ -31,7 +31,7 @@ export const Navbar = () => {
           </Link>
         </nav>
         <Link
-          href="/quote"
+          href="/contato"
           className="hidden rounded-tr-2xl rounded-bl-2xl md:inline-flex items-center bg-white px-4 py-2 text-blue-600 text-sm font-medium hover:bg-gray-100 transition"
         >
           Solicite um orçamento
@@ -78,20 +78,20 @@ export const Navbar = () => {
       {menuOpen && (
         <div className="md:hidden bg-blue-600 border-t border-blue-700">
           <nav className="flex flex-col items-center py-4 text-white space-y-4 text-sm">
-            <a href="" onClick={() => setMenuOpen(false)}>
+            <a href="/" onClick={() => setMenuOpen(false)}>
               Home
             </a>
-            <a href="" onClick={() => setMenuOpen(false)}>
+            <a href="/sobre" onClick={() => setMenuOpen(false)}>
               Quem Somos
             </a>
-            <a href="" onClick={() => setMenuOpen(false)}>
+            <a href="/service" onClick={() => setMenuOpen(false)}>
               Nossos Serviços
             </a>
-            <a href="" onClick={() => setMenuOpen(false)}>
+            <a href="/contato" onClick={() => setMenuOpen(false)}>
               Contato
             </a>
             <a
-              href=""
+              href="/contato"
               className=" rounded-tr-2xl rounded-bl-2xl inline-flex items-center bg-white px-4 py-2 text-blue-600 text-sm font-medium hover:bg-gray-100 transition"
               onClick={() => setMenuOpen(false)}
             >
